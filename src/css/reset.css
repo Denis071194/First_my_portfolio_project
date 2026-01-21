@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Chillax';
+  src: url('../fonts/Chillax-Light.woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('../fonts/Chillax-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Light.woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Regular.woff2');
+  font-weight: 400;
+}
+:root {
+  --color-text-main: rgba(255, 255, 255, 0.6);
+  --color-accent: #dac5a7;
+}
+
+body {
+  font-family: Chillax;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #0e0e0e;
+  color: var(--color-text-main);
+}
+
 h1,
 h2,
 h3,
@@ -6,6 +42,8 @@ h5,
 h6,
 p {
   margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 p:last-child {
