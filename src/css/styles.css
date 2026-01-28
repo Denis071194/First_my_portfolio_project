@@ -118,3 +118,43 @@ body {
   .card { padding: 22px 18px; border-radius: 16px; }
   .title { font-size: 20px; }
 }
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.total-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(29, 29, 31, 0.75);
+}
+
+.total-price {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.error {
+  display: block;
+  min-height: 14px;
+  font-size: 12px;
+  color: #ff3b30; /* iOS red */
+  margin-top: -2px;
+}
+
+.input.is-error {
+  border-color: rgba(255, 59, 48, 0.7);
+  box-shadow: 0 0 0 4px rgba(255, 59, 48, 0.18);
+}
+
+.success {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(29, 29, 31, 0.75);
+  min-height: 18px;
+}
