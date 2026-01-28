@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Booking</title>
     <script type="module" crossorigin src="/First_my_portfolio_project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/First_my_portfolio_project/assets/index-Bi70-8Zl.css">
+    <link rel="stylesheet" crossorigin href="/First_my_portfolio_project/assets/index-Vj0x9kYl.css">
   </head>
 
   <body>
@@ -14,29 +14,56 @@
         <h1 class="title">Book a Service</h1>
 
         <form id="bookingForm" class="form">
-          <label class="field">
-            <span class="label">Name</span>
-            <input id="name" class="input" type="text" placeholder="Your name" />
-          </label>
+  <label class="field">
+    <span class="label">Name</span>
+    <input id="name" class="input" type="text" placeholder="Your name" />
+      <small class="error" id="err-name"></small>
 
-          <label class="field">
-            <span class="label">Phone</span>
-            <input id="phone" class="input" type="tel" placeholder="+370..." />
-          </label>
+  </label>
 
-          <label class="field">
-            <span class="label">Date</span>
-            <input id="date" class="input" type="date" />
-          </label>
+  <label class="field">
+    <span class="label">Phone</span>
+    <input id="phone" class="input" type="tel" placeholder="+370..." />
+      <small class="error" id="err-name"></small>
 
-          <label class="field">
-            <span class="label">Time</span>
-            <input id="time" class="input" type="time" />
-          </label>
+  </label>
 
-          <button class="btn" type="submit">Book now</button>
-          <p class="hint">After submit, Telegram will open with your booking message.</p>
-        </form>
+  <label class="field">
+    <span class="label">Service</span>
+    <select id="service" class="input">
+      <option value="" selected disabled>Select service</option>
+      <option value="diagnostics">Diagnostics — €10</option>
+      <option value="screen">Screen replacement — €79</option>
+      <option value="battery">Battery replacement — €49</option>
+    </select>
+    
+  </label>
+
+  <label class="field">
+    <span class="label">Date</span>
+    <input id="date" class="input" type="date" />
+      <small class="error" id="err-name"></small>
+
+  </label>
+
+  <label class="field">
+    <span class="label">Time</span>
+    <input id="time" class="input" type="time" />
+      <small class="error" id="err-name"></small>
+
+  </label>
+
+  <div class="total">
+    <span class="total-text">Total:</span>
+    <span id="totalPrice" class="total-price">€0</span>
+  </div>
+
+  <button class="btn" type="submit">Book now</button>
+  <p class="success" id="successMsg"></p>
+
+  <p class="hint">After submit, Telegram will open with your booking message.</p>
+</form>
+
       </section>
     </main>
 
