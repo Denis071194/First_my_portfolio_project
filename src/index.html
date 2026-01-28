@@ -2,17 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Online Booking</title>
   </head>
+
   <body>
-    <load src="./partials/header.html" />
-    <main></main>
+    <main class="page">
+      <section class="card">
+        <h1 class="title">Book a Service</h1>
 
-    <load src="./partials/footer.html" />
+        <form id="bookingForm" class="form">
+          <label class="field">
+            <span class="label">Name</span>
+            <input id="name" class="input" type="text" placeholder="Your name" />
+          </label>
 
-    <script type="module" src="./main.js"></script>
+          <label class="field">
+            <span class="label">Phone</span>
+            <input id="phone" class="input" type="tel" placeholder="+370..." />
+          </label>
+
+          <label class="field">
+            <span class="label">Date</span>
+            <input id="date" class="input" type="date" />
+          </label>
+
+          <label class="field">
+            <span class="label">Time</span>
+            <input id="time" class="input" type="time" />
+          </label>
+
+          <button class="btn" type="submit">Book now</button>
+          <p class="hint">After submit, Telegram will open with your booking message.</p>
+        </form>
+      </section>
+    </main>
+
+    <!-- IMPORTANT: твій JS саме тут -->
+<script type="module" src="/js/main.js"></script>
   </body>
 </html>
